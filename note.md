@@ -26,3 +26,12 @@
   - Tính đến hiện tại, AWS đã giảm giá hơn 120 lần
 ---
 ## Module 01-03 - Bắt Đầu Hành Trình Lên Mây Như Thế Nào?
+- **Lời khuyên**:
+  - Kết bạn và kết nối với nhau để cùng nhau học hỏi.
+  - Hạn chế học một mình vì AWS có rất nhiều dịch vụ.
+  - Không bó buộc mình trong LAB của các nhà cung cấp dịch vụ.
+  - Đăng kí tài khoản thực AWS để trải nghiệm thực tế thông qua **FREE TIER** trong 1 năm.
+  - Học AWS để hiểu được toàn cảnh **BIG PICTURE** của ngành nghề.
+ ---
+ ## Module 01-04 - Hạ Tầng Toàn Cầu Của AWS
+ 
