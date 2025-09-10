@@ -33,5 +33,33 @@
   - Đăng kí tài khoản thực AWS để trải nghiệm thực tế thông qua **FREE TIER** trong 1 năm.
   - Học AWS để hiểu được toàn cảnh **BIG PICTURE** của ngành nghề.
  ---
- ## Module 01-04 - Hạ Tầng Toàn Cầu Của AWS
- 
+## Module 01-04 - Hạ Tầng Toàn Cầu Của AWS
+ - **DATA CENTER**:
+   - Một trung tâm dữ liệu có thể chứa hàng chục ngàn máy chủ
+   - Tất cả trung tâm dữ liệu của AWS đều sử dụng các **THIẾT BỊ ĐƯỢC TỐI ƯU HOÁ DÀNH RIÊNG CHO HOẠT ĐỘNG CỦA AWS**.
+ - **AVAILABILITY ZONE** (AZ):
+   - Một AZ bao gồm một hoặc nhiều **DATA CENTER**.
+   - Được thiết kế để không xảy ra sự cố ảnh hưởng đồng thời 2 AZ một lúc (**FAULT ISOLATION**).
+   - Giữa 2 AZ là đường kết nối riêng tốc độ cao.
+   - Khi đi thi: **AWS khuyến nghị nên triển khai ứng dụng tối thiểu trên 2 AZ**.
+   - Thực tế: Tuỳ tình hình và nhu cầu về độ sẵn sàng của ứng dụng mà có triển khai trên 2 AZ hay không.
+     - Ví dụ: Môi trường DEV-TEST có thể chạy trên 1 AZ và thực hiện backup
+ - **REGION**:
+   - Một AWS **REGION** bao gồm **TỐI THIỂU 3 AZ**.
+   - Hiện tại có hơn 25 Region trên toàn cầu.
+   - Các Region được kết nối với nhau bởi mạng backbone của AWS.
+   - Mặc định dữ liệu và dịch vụ ở các Region độc lập với nhau. (Trừ một số dịch vụ ở quy mô Global)
+   - Cách chọn Region:
+      - Chọn Region gần với người dùng nhất.
+       - Người dùng VN thì chọn Region Singapore cho độ trễ thấp. 
+      - Có những dịch vụ đặc thù, mới triển khai thì kết nối Region ở xa hơn.
+        - GenAI mới triển khai ở Region US  
+      - Quy mô càng lớn, Khách hàng càn nhiều, Chi phí càng rẻ
+        - Sau này giá ở Region Singapore sẽ rẻ hơn Region Vietnam
+        - Những hệ thống không đòi hỏi độ trễ, có thể chạy Region US để giảm chi phí
+ - **EDGE LOCATION**:
+    - Là mạng lưới trung tâm dữ liệu thứ cấp, được thiết kế để chạy những dịch vụ mạng biên với độ trễ thấp nhất.
+    - Các dịch vụ tại Edge Location (POP - Point-of-Presence):
+      - CloudFont (CDN - Content-Delivery-Network) lấy dữ liệu trực tiếp có trong bộ nhớ tại POP để trả lại dữ liệu nhanh nhất.
+      - Web Application Firewall (WAF) là dịch vụ tường lửa lớp số 7 đóng vai trò bảo vệ ứng dụng của mình, giảm bớt các cuộc tấn công DDOS.
+      - Route 53 (DNS Service) tạo những domain cho web của mình, gắn certificate vào domain
