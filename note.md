@@ -32,7 +32,7 @@
   - Không bó buộc mình trong LAB của các nhà cung cấp dịch vụ.
   - Đăng kí tài khoản thực AWS để trải nghiệm thực tế thông qua **FREE TIER** trong 1 năm.
   - Học AWS để hiểu được toàn cảnh **BIG PICTURE** của ngành nghề.
- ---
+---
 ## Module 01-04 - Hạ Tầng Toàn Cầu Của AWS
  - **DATA CENTER**:
    - Một trung tâm dữ liệu có thể chứa hàng chục ngàn máy chủ
@@ -63,3 +63,25 @@
       - CloudFont (CDN - Content-Delivery-Network) lấy dữ liệu trực tiếp có trong bộ nhớ tại POP để trả lại dữ liệu nhanh nhất.
       - Web Application Firewall (WAF) là dịch vụ tường lửa lớp số 7 đóng vai trò bảo vệ ứng dụng của mình, giảm bớt các cuộc tấn công DDOS.
       - Route 53 (DNS Service) tạo những domain cho web của mình, gắn certificate vào domain
+---
+## Module 01-05 - Công Cụ Quản Lý AWS Services
+ - **AWS Management Console - Login**:
+   - ROOT user: Tài khoản đăng kí đầu tiên gồm thông tin cá nhân, tài khoản này cực kì quan trọng nên hạn chế sử dụng.
+   - IAM user: Tài khoản con được tạo ra từ ROOT user, giúp quản lý truy suất sử dụng tài nguyên AWS. Khi đăng nhập, cần cung cấp thêm **ACCOUNT ID**(chuỗi gồm 12 chữ số)
+ - **AWS Managament Console - Service Search**:
+   -  Sau khi Login, có thể tìm kiếm các dịch vụ (**service**) của AWS.
+   -  Mỗi một dịch vụ sẽ có trang management riêng cho phép sử dụng các tính năng (**feature**) của dịch vụ đó.
+ - **AWS Managament Console - Support Center**:
+   - Bên tay phải màn hình, có menu Support, chúng ta có thể vào **Support Center** để tạo các support case để yêu cầu hỗ trợ từ đội ngũ của AWS.
+ - **AWS Command Line Interface**:
+   - Giao diện dòng lệnh AWS (AWS CLI) là một công cụ mã nguồn mỡ cho phép bạn tương tác với các dịch vụ AWS bằng cách sử dụng các lệnh (command line).
+   - Cho phép triển khai các chức năng tương đương được cung cấp bởi AWS Management Console trên trình duyệt.
+     - User -> Passwords -> AWS Management Console -> AWS Services Endpoint
+     - User -> AccessKey / Secret AccessKey -> AWS Command Line Interface -> AWS Services Endpoint
+ - **AWS Software Developer Kit (SDK)**:
+   - Đơn giản hoá trong việc xây dựng ứng dụng
+   - Tận dụng những dịch vụ, tính năng AWS cung cấp
+   - Thư viện hỗ trợ nhiều ngôn ngữ khác nhau
+   - Đội ngũ phát triển sử dụng một bộ thư viện nhất quán và quen thuộc
+   - Cung cấp hỗ trợ cho việc quản lí vòng đời của API tới AWS Services
+     - Apps / AccessKey / Secret AccesKey -> AWS Tools and SDK -> AWS Services Endpoint 
