@@ -85,3 +85,59 @@
    - Đội ngũ phát triển sử dụng một bộ thư viện nhất quán và quen thuộc
    - Cung cấp hỗ trợ cho việc quản lí vòng đời của API tới AWS Services
      - Apps / AccessKey / Secret AccesKey -> AWS Tools and SDK -> AWS Services Endpoint 
+---
+## Module 01-06 - Tối Ưu Hoá Chi Phí Trên AWS Và Làm Việc Với AWS Support
+ - **Tối Ưu hoá Chi Phí Trên AWS**:
+   - Lựa chọn cấu hình tài nguyên tính toàn và nơi lưu trữ dữ liệu phù hợp
+     - Chạy ở môi trường truyền thống không bao giờ 100 % -> Mang nguyên cấu hình lên Cloud -> Gây lãng phí, ko hiệu quả.
+   - Tận dụng các phương thức thanh toán giảm giá như
+     - Reserved Instance
+     - Saving Plan
+     - Spot
+   - Cơ chế "On-demand" - "Xài bao nhiêu Tính bấy nhiêu" -> Tính tiền dựa theo Giây, Phút, Giờ -> Chi phí Cao Nhất
+   - Cơ chế "Cam kết sử dụng càng lâu dài" - "Reserved Instance, Saving Plan" -> Có những mức Discount càng cao
+   - Cơ chế "Spot" - "Tài nguyên tạm" -> Nguồn tài nguyên sẵn sàng mở rộng -> Để không gây lãng phí -> Cho Thuê rất thấp có thể tới 90% nhưng sẽ có thể bị lấy lại bất cứ lúc nào
+   - Xoá các tài nguyên không sử dụng, bật tắt tự động các tài nguyên không cần chạy 24/7
+   - Tận dụng các dịch vụ **SERVERLESS** (Phi Máy Chủ)
+     - Là những dịch vụ không trực tiếp quản lí máy chủ ảo
+     - Ví dụ: quản lí Database bằng công cụ AWS
+   - **Thiết Kế Kiến Trúc Tối Ưu** giải quyết yêu cầu đề ra **CỰC KÌ QUAN TRỌNG**
+     - Giải quyết những yêu cầu, đáp ứng các ràng buộc
+     - TỐI ƯU HOÁ chi phí từ kiến trúc, cơ sở dữ liệu, câu truy vấn, ...
+   - Cài đặt và sử dụng AWS Budget
+     - Theo dõi và gửi cảnh báo mức sử dụng chi phí mỗi ngày / tuần / tháng
+     - Gửi cảnh báo dự đoán chi phí vượt qua mức dự định
+     - Gửi cảnh báo theo dịch vụ
+     - Thực hiện Actions để tắt máy chủ
+   - Quản lí chi phí theo phòng ban / ứng dụng với **cost allocation tag**
+   - **Liên tục** theo dõi và tối ưu hoá chi phí
+   - **GIÚP DOANH NGHIỆP KIẾM TIỀN, GIÚP DOANH NGHIỆP TIẾT KIỆM TIỀN**
+ - **Công cụ tính toán chi phí**:
+   - Cho phép tạo các estimate các dịch vụ thông dụng
+   - Có thể chia sẻ các estimate cho người khác
+   - Chi phí sẽ khác biệt theo từng Region...
+ - **Làm việc với AWS Support**
+   - AWS có 4 gói hỗ trợ chính
+     - Basic (Explore)
+     - Developer (Test/Dev)
+     - Business (Production)
+     - Enterprise (Large Enterprise)
+   - Có thể nâng cấp gói hỗ trợ trong thời gian ngắn để đẩy nhanh tốc độ hỗ trợ khi có sự cố quan trọng cần xử lý nhanh
+---
+## Module 01-07 - Thực Hành Và Nghiên Cứu Bổ Sung
+  - **Lab 01: Tạo tài khoản AWS**:
+    - Tạo tài khoản AWS
+    - Thiết lập MFA cho tài khoản AWS(Root)
+    - Tài khoản và Nhóm Admin
+    - Hỗ trợ xác thực tài khoản
+  - **Lab 07: Bắt đầu với AWS Budgets**:
+    - Tạo Cost budget
+    - Tạo Usage budget
+    - Tạo Reservation budget
+    - Tạo Saving Plans budget
+  - **Lab 09: Yêu cầu hỗ trợ AWS Support**:
+    - Các gói hỗ trợ AWS
+    - Truy cập AWS Support
+    - Quản lí yêu cầu hỗ trợ
+  - **Nghiên cứu bổ sung**:
+    - AWS Well Architected Framework     
