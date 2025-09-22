@@ -59,3 +59,24 @@
 ## 08 - **Meta Data**
 ![Metadata](images/image7.png)
 ![Structure](images/image8.png)
+
+## 09 - **EC2 Auto Scaling**
+  - EC2 Auto Scaling là tính năng hỗ trợ tăng giảm lượng EC2 Instances dựa theo các điều kiện cụ thể (scaling policy)
+  - EC2 Auto Scaling có thể tự đăng ký các EC2 Instance vào Elastic Load Balancer
+  - EC2 Auto Scaling hoạt động trên nhiều AWS Availability Zone
+  - EC2 Auto Scaling có thể hỗ trợ nhiều **Pricing Options** khác nhau
+![AutoScaling](images/image9.png) 
+
+ ## 10 - **Pricing Options**
+  - **On-demand**: Trả theo giờ / phút / giây, xài nhiêu tính nhiêu, mắc nhất. Phù hợp cho các workload chạy lên tới 6 tiếng 1 ngày.
+  - **Reserved Instance**: Cam kết sử dụng theo kì hạn 1-3 năm để lấy discount, tuy nhiên bị giới hạn theo EC2 Instance type family.
+  - **Saving Plans**: Cam kết sử dụng theo kì hạn 1-3 năm để lấy discount, có thể không bị giới hạn bởi EC2 Instance type family.
+  - **Spot Instance**: Tận dụng tài nguyên dư, giá rẻ tuy nhiên khi cần thì AWS sẽ terminate instance trong 2 phút.
+![PricingOptions](images/image10.png)
+
+## 11 - **Amazon LightSail**
+  - Amazon Lightsail là dịch vụ tính toán có chi phí thấp (giá tính theo tháng chỉ bắt đầu từ 3.5$ / tháng) ngoài ra mỗi Instance Lightsail tạo ra cũng sẽ có một mức data transfer đi kèm.(data transfer này có mức giá rẻ hơn data transfer từ EC2 tương đối nhiều)
+  - Amazon Lightsail phù hợp cho các workload nhẹ, môi trường test dev, không yêu cầu tải CPU cao liên tục > 2 giờ mỗi ngày.
+  - Amazon Lightsail cũng có khả năng backup bằng snapshot tương tự EC2.
+  - Amazon Lightsail chạy trong một VPC đặc biệt, có thể kết nối tới VPC thông thường qua 1 click VPC Peering.
+![AmazonLightsail](images/image11.png)
