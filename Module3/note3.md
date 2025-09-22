@@ -26,4 +26,15 @@
   - EC2 (nằm trên lớp Hypervisor) là các máy chủ ảo có thuật ngữ là **EC2 Instances** thay vì Virtual Machine.
     - Không đánh đồng hiệu năng trên Cloud, hay so sánh cấu hình với On-Premise -> Cần chạy đánh giá hiệu năng thực tế 
 
-![EC2 structure](images/image.png)
+![EC2 structure](images/image1.png)
+
+## 04
+  **AMI/Backup/Keypair**
+  - Amazon Machine Image (AMI): có thể provision ra một hoặc nhiều EC2 Instances cùng lúc
+    - AMI có sẵn của AWS trên AWS market place và custom AMI tự tạo từ EC2 Instances
+    - AMI bao gồm root OS volumes, quyền sử dụng AMI quy định tài khoàn AWS được sử dụng và mapping EBS volume được tạo và gán vào EC2 Instances
+![AMI](image2.png) 
+  - EC2 Instance có thể được **backup** bằng cách tạo **snapshot**:
+    - Snapshot đầu tiên full snapshot
+    - Snapshot thứ 2 trở đi sẽ là in-cremental snapshot (chỉ lấy những cái thay đổi trên volume đó)
+  - **Key pair** (public key và private key): dùng để mã hóa thông tin đăng nhập cho EC2 Instance
