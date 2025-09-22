@@ -1,4 +1,4 @@
-# Worklog Week 2
+# Worklog Week 2 - Module 2
 - Monday: Hoc module 02-01 va tom tat
 - Tuesday: Hoc module 02-02 va tom tat
 - Wednesday: Hoc module 02-03 va tom tat
