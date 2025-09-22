@@ -38,3 +38,18 @@
     - Snapshot đầu tiên full snapshot
     - Snapshot thứ 2 trở đi sẽ là in-cremental snapshot (chỉ lấy những cái thay đổi trên volume đó)
   - **Key pair** (public key và private key): dùng để mã hóa thông tin đăng nhập cho EC2 Instance
+
+## 05 
+  **Elastic Block Store**
+  - **Amazon EBS** cung cấp block storage và được gán trực tiếp vào EC2 Instance
+    - Tuy được gán trực tiếp như 1 RAW device thì EBS bản chất hoạt động động lập với EC2 và được kết nối thông qua mạng riêng của EBS
+  - EBS có 2 nhóm đĩa chính là HDD và SSD được thiết kế để đạt độ sẵn sàng ~ 99.9% bằng cách replicate dữ liệu giữa 3 storage node trong 1 AZ
+    - HDD: ưu tiên với việc đọc ghi tuần tự
+    - SSD: lưu trữ dạng flash, hỗ trợ đọc ghi ngẫu nhiên cao
+![EBS](images/image3.png)
+  - **EBS về bản chất hoạt động độc lập với EC2 và được kết nối thông qua mạng riêng EBS trong cùng 1 AZ**
+    - **EC2 không thể hoạt động mà không có EBS**
+  - Một số EC2 Instances đặc thù được tối ưu hóa hiệu năng của EBS (Optimized EBS Instances)
+  - EBS volumes mặc định chỉ được gán vào 1 EC2 Instances
+    - Tuy nhiên EC2 chạy trên Hypervisor Nitro có thể dùng 1 EBS volume gắn vào nhiều EC2 (EBS Multi attach)
+  - EBS được backup bằng cách thực hiện snapshot vào S3 (Simple storage storage)
