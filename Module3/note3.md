@@ -33,7 +33,7 @@
   - Amazon Machine Image (AMI): có thể provision ra một hoặc nhiều EC2 Instances cùng lúc
     - AMI có sẵn của AWS trên AWS market place và custom AMI tự tạo từ EC2 Instances
     - AMI bao gồm root OS volumes, quyền sử dụng AMI quy định tài khoàn AWS được sử dụng và mapping EBS volume được tạo và gán vào EC2 Instances
-![AMI](image2.png) 
+![AMI](images/image2.png) 
   - EC2 Instance có thể được **backup** bằng cách tạo **snapshot**:
     - Snapshot đầu tiên full snapshot
     - Snapshot thứ 2 trở đi sẽ là in-cremental snapshot (chỉ lấy những cái thay đổi trên volume đó)
