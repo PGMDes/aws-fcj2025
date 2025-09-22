@@ -53,5 +53,9 @@
 ![Instance](images/image4.png)
 
 ## 07 - **User Data**
-![Text](images/image5.png)
+![Userdata](images/image5.png)
 ![Structure](images/image6.png)
+
+## 08 - **Meta Data**
+![Metadata](images/image7.png)
+![Structure](images/image8.png)
