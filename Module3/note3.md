@@ -80,3 +80,11 @@
   - Amazon Lightsail cũng có khả năng backup bằng snapshot tương tự EC2.
   - Amazon Lightsail chạy trong một VPC đặc biệt, có thể kết nối tới VPC thông thường qua 1 click VPC Peering.
 ![AmazonLightsail](images/image11.png)
+
+## 12 - **Amazon EFS**
+  - EFS (Elastic File System) cho phép tạo các NFSv4 Network volume và gán vào nhiều EC2 Instances cùng lúc, quy mô lưu trữ lên đến hàng petrabyte.
+  - **EFS chỉ hỗ trợ Linux**.
+  - Sử dụng EFS chỉ tính chi phí theo dung lượng sử dụng (trong khi EBS tính phí theo dung lượng cấp phát).
+  - EFS có thể được cấu hình để mount vào môi trường on-premise qua DX hoặc VPN.
+![AmazonEFS](images/image12.png)
+
