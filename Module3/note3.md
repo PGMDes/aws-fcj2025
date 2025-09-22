@@ -53,5 +53,5 @@
   - EBS được backup bằng cách thực hiện snapshot vào S3 (Simple storage storage)
 
 ## 06
-    **Instance Store**
-    ![Instance](images/image4.png)
+  **Instance Store**
+![Instance](images/image4.png)
