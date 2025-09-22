@@ -88,3 +88,16 @@
   - EFS có thể được cấu hình để mount vào môi trường on-premise qua DX hoặc VPN.
 ![AmazonEFS](images/image12.png)
 
+## 13 - **Amazon FSX**
+  - FSx cho phép tạo các NTFS volume và gán vào nhiều EC2 Instances cùng lúc sử dụng giao thức SMB (Server Message Block).
+  - **FSx hỗ trợ cho Windows và Linux**
+  - Sử dụng FSx chỉ tính chi phí theo dung lượng sử dụng (trong khi EBS tính chi phí theo dung lượng cấp phát).
+  - FSx hỗ trợ tính năng **deduplication**, giúp giảm chi phí 30-50% cho các trường hợp sử dụng thông thường.
+![AmazonFSx](images/image13.png)
+
+## 14 - **AWS Application Migration Service(MGN)**
+  - MGN dùng để migrate và replicate phục vụ mục đích xây dựng Disaster Recovery Site cho các máy chủ thực, ảo lên môi trường AWS.
+  - MGN liên tục sao chép các máy chủ nguồn sang EC2 Instance trên tài khoản AWS (**asynchronous / syschronous**).
+  - MGN trong quá trình sao chép sẽ sử dụng các máy staging có số lượng và quy mô cấu hình nhỏ hơn máy chủ gốc rất nhiều.
+  - Khi thực hiện **cut-over** MGN sẽ tự động tạo và chạy các máy chủ EC2 trên AWS.
+![AmazonMGN](images/image14.png)
