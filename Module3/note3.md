@@ -47,8 +47,6 @@
     - HDD: ưu tiên với việc đọc ghi tuần tự
     - SSD: lưu trữ dạng flash, hỗ trợ đọc ghi ngẫu nhiên cao
 ![EBS](images/image3.png)
-  - **EBS về bản chất hoạt động độc lập với EC2 và được kết nối thông qua mạng riêng EBS trong cùng 1 AZ**
-    - **EC2 không thể hoạt động mà không có EBS**
   - Một số EC2 Instances đặc thù được tối ưu hóa hiệu năng của EBS (Optimized EBS Instances)
   - EBS volumes mặc định chỉ được gán vào 1 EC2 Instances
     - Tuy nhiên EC2 chạy trên Hypervisor Nitro có thể dùng 1 EBS volume gắn vào nhiều EC2 (EBS Multi attach)
