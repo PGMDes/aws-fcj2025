@@ -1,6 +1,6 @@
 # Worklog Week 2
-- Monday: Hoc module 02-01 va tom tat
-- Tuesday: Hoc module 02-02 va tom tat
-- Wednesday: Hoc module 02-03 va tom tat
-- Thursday: Tong hop tom tat tu may ngay truoc; Lam Lab03, Lab10
-- Friday: Lam Lab19, Lab20
+- Monday: Học module 02-01 và tóm tắt
+- Tuesday: Học module 02-02 và tóm tắt
+- Wednesday: Học module 02-03 và tóm tắt
+- Thursday: Tổng hợp tóm tắt từ mấy ngày trước; Làm Lab03, Lab10
+- Friday: Làm Lab19, Lab20
