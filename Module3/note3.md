@@ -36,7 +36,7 @@
 ![AMI](images/image2.png) 
   - EC2 Instance có thể được **backup** bằng cách tạo **snapshot**:
     - Snapshot đầu tiên full snapshot
-    - Snapshot thứ 2 trở đi sẽ là in-cremental snapshot (chỉ lấy những cái thay đổi trên volume đó)
+    - Snapshot thứ 2 trở đi sẽ là incremental snapshot (chỉ lấy những cái thay đổi trên volume đó)
   - **Key pair** (public key và private key): dùng để mã hóa thông tin đăng nhập cho EC2 Instance
 
 ## 05 
@@ -49,5 +49,9 @@
 ![EBS](images/image3.png)
   - Một số EC2 Instances đặc thù được tối ưu hóa hiệu năng của EBS (Optimized EBS Instances)
   - EBS volumes mặc định chỉ được gán vào 1 EC2 Instances
-    - Tuy nhiên EC2 chạy trên Hypervisor Nitro có thể dùng 1 EBS volume gắn vào nhiều EC2 (EBS Multi attach)
+    - Tuy nhiên EC2 chạy trên **Hypervisor Nitro** có thể dùng 1 EBS volume gắn vào nhiều EC2 (EBS Multi attach)
   - EBS được backup bằng cách thực hiện snapshot vào S3 (Simple storage storage)
+
+## 06
+    **Instance Store**
+    ![Instance](images/image4.png)
